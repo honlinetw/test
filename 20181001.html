@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<!-- title代表標題 -->
+		<title>我的第一個網頁</title>
+		<!-- charset代表文字編碼 -->
+		<meta charset="utf-8" />
+		<!-- 網頁icon -->
+		<link rel="shortcut icon" href="aaa/favicon.ico" />
+		<link rel="bookmark" href="aaa/favicon.ico"/>
+	</head>
+	<body>
+		<!-- h1~h6:標題 style="CSS語法" -->
+		<h1 style="color:#ffd7d7">我的標題</h1>
+		<!-- br換行 -->
+		<p style="color:rgb(0, 255, 0)">今天<br />天氣<b>真好</b></p>
+		<!-- href="連結" title="標題" target="目標" _blank:新分頁 _self:自己 -->
+		<a href="https://www.google.com.tw/" title="我是標題" target="_blank">超連結(新分頁)</a>
+		<a href="https://www.google.com.tw/" title="我是標題" target="_self">超連結</a>
+		<hr />
+		<h2 style="color:rgb(255, 0, 0)">我的標題</h2>
+		<!-- hr分隔線 -->
+		<hr />
+		<h3>我的h3</h3>
+		<hr />
+		<h4>我的h4</h4>
+		<hr />
+		<h5>我的h5</h5>
+		<hr />
+		<h6>我的h6</h6>
+		<hr />
+		<p><b>我是粗體</b></p>
+		<p><strong>我是粗體</strong></p>
+		<hr />
+		<p><i>我是斜體</i></p>
+		<p><em>我是斜體</em></p>
+		<hr />
+		<!-- 
+		img圖片標籤 title="標題" alt="替代文字(圖片不見時顯示的)"
+		%=區塊百分比，不是圖片百分比
+		vh=viewport height 視窗高度 1vh = 1%視窗高度
+		vw=viewport width 視窗寬度 1vw = 1%視窗寬度
+		-->
+		<img src="123a.jpg" title="職訓" alt="替代文字" width="50px" height="75px">
+		<img src="123a.jpg" title="職訓" alt="替代文字" style="width:50vw; height:50vh">
+		<hr />
+		<!-- marquee:跑馬燈 -->
+		<marquee>我是跑馬燈</marquee>
+		<hr />
+		<!-- ul:項目符號 li:每一項 -->
+		<ul>
+			<li>我是<a href="https://www.google.com.tw/">第1項</a></li>
+			<li>我是<i>第2項</i></li>
+			<li>我是<b>第3項</b></li>
+			<li>我是第4項</li>
+		</ul>
+		
+		<!-- ol:數字編號 start="從第幾個數字開始"  li:每一項 -->
+		<ol start="5">
+			<li>我是<a href="https://www.google.com.tw/">第1項</a></li>
+			<li>我是<i>第2項</i></li>
+			<li>我是<b>第3項</b></li>
+			<li>我是第4項</li>
+		</ol>
+		<hr />
+		<!-- 
+		iframe智慧型框架 src="檔案或網址" width="寬" height="高" name="名字" 
+		a標籤target可以設定在哪個名字的iframe開啟
+		a標籤target如果是_parent的話代表在上一層開啟
+		-->
+		<a href="https://www.google.com" title="我是標題" target="_parent">超連結(在上一層開啟google)</a>
+		<a href="20181001.html" title="我是標題" target="f1">超連結(在iframe開啟)</a>
+		<iframe src="" width="1000px" height="800px" name="f1"></iframe>
+		<hr />
+		<!-- form表單 action:處理表單的程式 method:資料的傳送方法 -->
+		<form action="" method="">
+			<!-- type:text 文字欄位 value="預設值" placeholder="預留位置" name="欄位名字" required 必填-->
+			<input type="text" value="" placeholder="輸入帳號" name="account" required />
+			<br />
+			<!-- type:password 密碼欄位 value="預設值" placeholder="預留位置" name="欄位名字"-->
+			<input type="password" value="" placeholder="輸入密碼" name="password" />
+			<br />
+			<!-- textarea 大文字欄位 value="預設值" placeholder="預留位置" name="欄位名字" -->
+			<textarea name="textarea"></textarea>
+			<br />
+			<!-- 
+			select 下拉選單 option 選項 
+			option必須要有value程式才會知道值
+			name="欄位名字" value="值"
+			selected:選擇選項
+			-->
+			<select name="select">
+				<option value="1">選項1</option>
+				<option value="2">選項2</option>
+				<option value="3" selected>選項3</option>
+				<option value="4">選項4</option>
+			</select>
+			<p>是否同意會員註冊條款</p>
+			<!-- radio:選項按鈕(單選) checked:打勾 每組的name不一樣 -->
+			<input type="radio" name="radio"  />是
+			<input type="radio" name="radio" checked />否
+			<p>是否同意規定</p>
+			<input type="radio" name="radio2"  />是
+			<input type="radio" name="radio2" checked />否
+			<br />
+			<!-- radio:選項按鈕(多選) checked:打勾 每組的name不一樣 -->
+			<input type="checkbox" name="checkbox" />1<br/>
+			<input type="checkbox" name="checkbox" />2<br/>
+			<input type="checkbox" name="checkbox" checked />3<br/>
+			<br />
+			<!-- hidden:隱藏欄位 -->
+			<input type="hidden" value="" name="" />
+			<!-- submit:送出表單到form的action的程式 value="按鈕文字" -->
+			<input type="submit" value="送出"/>
+			<!-- reset:重設表單 value="按鈕文字" -->
+			<input type="reset" value="重置" />
+			<!-- button:按鈕 value="按鈕文字" -->
+			<input type="button" value="按鈕" />
+		</form>
+	</body>
+</html>
